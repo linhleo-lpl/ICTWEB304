@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Lotus Care</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="hpStyle.css">
+
+</head>
+<body>
+<div>
+ <br><br><button type="button" onclick="getInputValue();">Search</button>
+  <input type="text" placeholder="" id="myInput">
+    <script>
+       function getInputValue(){
+            //Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            //Displaying the value
+            alert("What you searched was: " + inputVal);
+        }
+    </script>
+</div> 
+<div class="header">
+  <h2><img width="130" height="130" src="images/logo.png"><br>
+  Working Out
+</h2>
+</div>
+
+<div class="header3">
+    <center><h3>Happy Health - Healthy Mind </h3></div></center>
+</div>
+<div class="row">
+  <div class="column left">
+    <center><button class="button" onclick="window.open('Homepage.html', '_self')">
+      <center><img width="40" src="images/homeicon.png"></center>
+    </button><br></center>
+    <center><button class="button" onclick="window.open('Workshop1.html', '_self')">Healthy Eating</button><br></center>
+    <center><button class="button" onclick="window.open('Image Gallery.html', '_self')">Image Gallery</button><br></center>
+    <center><button class="button" onclick="window.open('Registration.html', '_self')">Registration</button><br></center>
+</div>
+    <div class="column right">
+      <center><h2>What to know about exercise and how to start</h2></center>
+      <p style="float: right; clear: right;"><img width="500" height="200" src="images/p16.jpg"></p> 
+      <h3>Exercise involves engaging in physical activity and increasing the heart rate beyond resting levels. It is an important part of preserving physical and mental health.</h3>
+<p>Whether people engage in light exercise, such as going for a walk, or high intensity activities, for example, uphill cycling or weight training, regular exercise provides a huge range of benefits for the body and mind.<br>
+Taking part in exercise of any intensity every day is essential for preventing a range of diseases and other health issues.<br><br>
+In this article, we explain the different types of exercise and their benefits, as well as the considerations for designing a fitness regime.</p><hr/>
+
+      <h3>Types and benefits</h3>
+      <p id="demo"></p>
+      <button type="button" onclick="myFunction()">Find out more</button>
+      <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML =
+         "People divide exercise into three broad categories:<br/><br/>"+
+         "_aerobic<br/>"+
+         "_anaerobic<br/>"+
+         "_agility training<br/>";
+      }
+      </script><hr/>
+
+<h3>Risks of not exercising</h3>
+<p id="demo1"></p>
+<button type="button" onclick="myFunction1()">Find out more</button>
+<script>
+function myFunction1() {
+  document.getElementById("demo1").innerHTML =
+  "A sedentary lifestyle can increase the risk of the following health problems:<br/><br/>"+
+  "_cardiovascular disease<br/>"+
+  "_type 2 diabetes<br/>"+
+  "_cancer<br/>"+
+  "_osteoporosis<br/><br/>"+
+  "It can also contribute to an increased risk of premature death from all causes, including the complications of being overweight and obesity.<br/><br/>"+
+  "In many parts of the world, including the United States, the number of overweight and obese people continues to increase rapidly.<br/>";
+}
+</script><hr/>
+
+<h3>Finding time to exercise</h3>
+<p id="demo2"></p>
+<button type="button" onclick="myFunction2()">Find out more</button>
+<script>
+function myFunction2() {
+  document.getElementById("demo2").innerHTML =
+  "Fitting exercise into a busy schedule can be a roadblock to a successful regime. However, people do not need to dedicate large amounts of extra time to exercise to see the benefits.<br/><br/>"+
+
+  "Here are some tips for fitting physical activity in a busy schedule:<br/><br/>"+"    "+
+
+  "_See which car journeys you can replace with walking or cycling. Is driving to work necessary? If so, try parking half a mile away from the office and walking the final bit.<br/>"+
+  "_People who commute to work by public transport could try getting off their bus or train a few stops early and walking the rest of the way.<br/>"+
+  "_Consider walking up and down the stairs at your office instead of taking elevators or escalators.<br/>"+
+  "_Try to think about the amount of time spent watching television and avoid binge-watching TV shows. While watching television for extended periods, light exercises, such as stomach crunches or jumping jacks, can help a person include more physical activity in their day.<br/>"+
+  "_If a person enjoys video games, they could consider playing games that encourage physical activity, such as exercise routines on a Nintendo Wii.<br/>"+
+  "_Vigorous housework, gardening, and going up and down the stairs while doing chores also qualify as physical activity and can help people meet the guidelines productively.<br/><br/>"+
+  "People will likely gain the most benefit from exercises they enjoy that fit their lifestyle.<br/><br/>"+
+  
+  "_Some of the examples below are the easiest to fit into a daily routine:<br/>"+
+  "_Go for a brisk 30-minute walk five times every week.<br/>"+
+  "_Walk your dog more often or go for walks and jogs with friends.<br/>"+
+  "_Try to add swimming to your weekly routine, even if it is not every day.<br/>"+
+  "_Join some exercise classes that are fun, collaborative, and educational.<br/>"+
+  "_Become a member of a martial arts club. Beginner’s sessions can be gentle and fun.<br/><br/>"+
+  "Exercise is sometimes a gradual learning curve. A person should spread sessions across the week and scale up the intensity slowly.<br/><br/>"+
+
+  "It is important for people to ensure they drink plenty of water during and after exercise. Checking with a doctor is a good precaution to take if someone has a health condition or injury that could impact exercise levels, or that exercise could make worse.<br/><br/>"+
+
+  "While a combination of aerobic and anaerobic exercise provides the most benefit, any exercise is better than none for people who currently have an inactive lifestyle.<br/>";
+}
+</script><hr/>
+<h3>Tips for starting</h3>
+<p id="demo3"></p>
+<button type="button" onclick="myFunction3()">Find out more</button>
+<script>
+function myFunction3() {
+  document.getElementById("demo3").innerHTML =
+"Exercise may be difficult to maintain for some people. Consider the following tips to achieve long-term success:<br/><br/>"+
+
+"_Have a clear goal: Whether for health reasons or otherwise, try to always keep in mind the reason you started increasing your exercise levels.<br/>"+
+"_Work at your own pace: Doing too much too quickly can increase the risk of injury and the chance to develop a stable routine. Set targets based on the goals you established at the start of the regimen and celebrate small wins to boost confidence.<br/>"+
+"_Enjoy yourself: A regimen is more sustainable if a person enjoys the physical activities that it involves.<br/>"+
+"_Join a club with a friend: If you join a fitness club with a friend, or exercise with a friend, you may enjoy the sessions more. Some people prefer not to have the stress of someone else around. This depends on you.<br/>"+
+"_Trainers and teachers can be helpful: People just starting a regimen or looking to step up their routine may benefit from a personal trainer or teacher. They can provide motivation and guidance, helping people track their goals and stay dedicated.<br/>"+
+"_Vary your exercises: Change your exercise program every few weeks. Mixing it up can help a person work on different muscle groups and increase the range of benefits. If you enjoy one particular exercise, such as running, try changing the speed and distance of a run, or follow a different route with more hills.<br/>"+
+"_Make it a habit: After a few weeks of regularity, an exercise routine starts to become a habit, even if you find it difficult or boring at first.<br/><br/>"+
+"The benefits of regular physical activity are wide-reaching and should form a part of every person’s day to help them remain healthy.";
+}
+</script><hr/>
+</div>
+<div class="footer">
+  <p><img width="130" height="130" src="images/logo.png"></p><br>
+  <p><img width="70" height="70" src="images/p6.png"><br> lotuscare22@gmail.com</p><br><br>
+  <p><img width="70" height="70" src="images/p7.png"><br> +61 123 456 789</p><br><br>
+</div>
+
+</body>
+</html>

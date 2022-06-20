@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image:url(images/background.jpg) ;
+    background-size: cover;
+  }
+  
+  /* Style the header */
+  .header {
+    text-align: center;
+    font-size: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: white;
+  } 
+  .header3 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+  }
+  .column {
+    float: left;
+    height:fit-content; /* Should be removed. Only for demonstration */
+  }
+
+  .column.left {
+    width: 20%;
+    padding: 10px;
+    border:double grey;
+  }
+
+  /* middle column */
+  .column.right {
+    width: 80%;
+    border:double grey;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 13px;
+    font-size: 19px;
+    color: whitesmoke;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Style the footer */
+  .footer {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align:center;
+  }
+  .button {
+    background-color: #E0BBE4;
+    border:double black;
+    color:black;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 2px;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+  }
+  
+  .button:hover {
+    background-color: #bc8ac0;
+  }
+  
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
